@@ -1,0 +1,129 @@
+# vsim -sv_seed 628437 -debugDB -l TSR_test_628437.log -voptargs="+acc" -assertdebug -c testbench -do " log -r /*;run -all;" "+TSR_test" 
+# Start time: 23:41:42 on Jul 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.6d_1 linux_x86_64 Apr 11 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dut_if(fast)
+# Loading work.timer_pkg(fast)
+# Loading work.test_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.dut_if(fast)
+# Loading work.timer_top(fast)
+# Loading work.timer_register(fast)
+# Loading work.timer_clock_divisor(fast)
+# Loading work.timer_counter(fast)
+# Loading work.timer_interrupt(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+#  log -r /*
+# run -all
+# [TestBench] TSR
+# 0: [Environment] Build
+# 100000: [Stimulus] Get packet
+# 100000: [Stimulus] Send packet to Driver
+# 100000: [Driver] Get packet from Stimulus
+# 100000: [Driver] Start APB transfer
+# 110000: [Monitor] Start capturing APB transaction
+# 130000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h01, data = 8'h03
+# 150000: [Stimulus] Get packet
+# 150000: [Stimulus] Send packet to Driver
+# 150000: [Driver] Get packet from Stimulus
+# 150000: [Driver] Start APB transfer
+# 170000: [Monitor] Start capturing APB transaction
+# 190000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h01, data = 8'h00
+# 210000: [Stimulus] Get packet
+# 210000: [Stimulus] Send packet to Driver
+# 210000: [Driver] Get packet from Stimulus
+# 210000: [Driver] Start APB transfer
+# 230000: [Monitor] Start capturing APB transaction
+# 250000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h00, data = 8'h01
+# 1510000: [Stimulus] Get packet
+# 1510000: [Stimulus] Send packet to Driver
+# 1510000: [Driver] Get packet from Stimulus
+# 1510000: [Driver] Start APB transfer
+# 1530000: [Monitor] Start capturing APB transaction
+# 1550000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h01, data = 8'h00
+# 1570000: [Stimulus] Get packet
+# 1570000: [Stimulus] Send packet to Driver
+# 1570000: [Driver] Get packet from Stimulus
+# 1570000: [Driver] Start APB transfer
+# 1590000: [Monitor] Start capturing APB transaction
+# 1610000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h01, data = 8'h01
+# 1630000: [Stimulus] Get packet
+# 1630000: [Stimulus] Send packet to Driver
+# 1630000: [Driver] Get packet from Stimulus
+# 1630000: [Driver] Start APB transfer
+# 1650000: [Monitor] Start capturing APB transaction
+# 1670000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h00, data = 8'h00
+# 1690000: [Stimulus] Get packet
+# 1690000: [Stimulus] Send packet to Driver
+# 1690000: [Driver] Get packet from Stimulus
+# 1690000: [Driver] Start APB transfer
+# 1710000: [Monitor] Start capturing APB transaction
+# 1730000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h02, data = 8'hff
+# 1750000: [Stimulus] Get packet
+# 1750000: [Stimulus] Send packet to Driver
+# 1750000: [Driver] Get packet from Stimulus
+# 1750000: [Driver] Start APB transfer
+# 1770000: [Monitor] Start capturing APB transaction
+# 1790000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h00, data = 8'h04
+# 1810000: [Stimulus] Get packet
+# 1810000: [Stimulus] Send packet to Driver
+# 1810000: [Driver] Get packet from Stimulus
+# 1810000: [Driver] Start APB transfer
+# 1830000: [Monitor] Start capturing APB transaction
+# 1850000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h00, data = 8'h03
+# 3110000: [Stimulus] Get packet
+# 3110000: [Stimulus] Send packet to Driver
+# 3110000: [Driver] Get packet from Stimulus
+# 3110000: [Driver] Start APB transfer
+# 3130000: [Monitor] Start capturing APB transaction
+# 3150000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h01, data = 8'h01
+# 3170000: [Stimulus] Get packet
+# 3170000: [Stimulus] Send packet to Driver
+# 3170000: [Driver] Get packet from Stimulus
+# 3170000: [Driver] Start APB transfer
+# 3190000: [Monitor] Start capturing APB transaction
+# 3210000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h01, data = 8'h03
+# 3230000: [Stimulus] Get packet
+# 3230000: [Stimulus] Send packet to Driver
+# 3230000: [Driver] Get packet from Stimulus
+# 3230000: [Driver] Start APB transfer
+# 3250000: [Monitor] Start capturing APB transaction
+# 3270000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h01, data = 8'h00
+# 3290000: [Stimulus] Get packet
+# 3290000: [Stimulus] Send packet to Driver
+# 3290000: [Driver] Get packet from Stimulus
+# 3290000: [Driver] Start APB transfer
+# 3310000: [Monitor] Start capturing APB transaction
+# 3330000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h01, data = 8'h03
+# 3350000: [Stimulus] Get packet
+# 3350000: [Stimulus] Send packet to Driver
+# 3350000: [Driver] Get packet from Stimulus
+# 3350000: [Driver] Start APB transfer
+# 3370000: [Monitor] Start capturing APB transaction
+# 3390000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h01, data = 8'h03
+# 3410000: [Stimulus] Get packet
+# 3410000: [Stimulus] Send packet to Driver
+# 3410000: [Driver] Get packet from Stimulus
+# 3410000: [Driver] Start APB transfer
+# 3430000: [Monitor] Start capturing APB transaction
+# 3450000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h01, data = 8'h00
+# 3470000: [Scoreboard] Status: TEST PASSED
+# 4470000: [Base test] End simulation
+# ** Note: $finish    : ../testcase/base_test.sv(48)
+#    Time: 4470 ns  Iteration: 0  Instance: /testbench
+# End time: 23:41:43 on Jul 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

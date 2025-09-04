@@ -1,0 +1,55 @@
+###########################################################
+####               ICTC Regression Report              ####
+###########################################################
+Total testcase run: 44
+Passed            : 28
+Failed            : 16
+Unknown           : 0
+Used time         : 2m 50s
+-----------------------------------------------------------
+Run log detail:
+log/count_down_div_4_test_974349.log: => Failed
+log/count_down_div_8_test_475397.log: => Failed
+log/count_down_load_div_4_test_573495.log: => Failed
+log/count_down_load_div_4_test_576751.log: => Failed
+log/count_down_load_div_4_test_967745.log: => Failed
+log/count_down_load_div_8_test_219392.log: => Failed
+log/count_down_load_div_8_test_246628.log: => Failed
+log/count_down_load_div_8_test_635025.log: => Failed
+log/count_up_div_4_test_343781.log: => Failed
+log/count_up_div_8_test_757576.log: => Failed
+log/count_up_load_div_4_test_179693.log: => Failed
+log/count_up_load_div_4_test_891006.log: => Failed
+log/count_up_load_div_4_test_960334.log: => Failed
+log/count_up_load_div_8_test_221999.log: => Failed
+log/count_up_load_div_8_test_512503.log: => Failed
+log/count_up_load_div_8_test_977287.log: => Failed
+log/TSR_int_test_952792.log: => Passed
+log/TSR_test_628437.log: => Passed
+log/count_down_div_2_test_134794.log: => Passed
+log/count_down_load_div_2_test_232341.log: => Passed
+log/count_down_load_div_2_test_248920.log: => Passed
+log/count_down_load_div_2_test_643904.log: => Passed
+log/count_down_load_no_div_test_462694.log: => Passed
+log/count_down_load_no_div_test_645489.log: => Passed
+log/count_down_load_no_div_test_674710.log: => Passed
+log/count_down_no_div_test_665635.log: => Passed
+log/count_up_div_2_test_166468.log: => Passed
+log/count_up_load_div_2_test_524903.log: => Passed
+log/count_up_load_div_2_test_551712.log: => Passed
+log/count_up_load_div_2_test_790969.log: => Passed
+log/count_up_load_no_div_test_107686.log: => Passed
+log/count_up_load_no_div_test_427754.log: => Passed
+log/count_up_load_no_div_test_447521.log: => Passed
+log/count_up_no_div_test_271736.log: => Passed
+log/default_value_register_test_999303.log: => Passed
+log/pause_down_test_193145.log: => Passed
+log/pause_up_test_531052.log: => Passed
+log/reserved_test_609255.log: => Passed
+log/reserved_test_874513.log: => Passed
+log/rst_test_576547.log: => Passed
+log/rw_value_register_test_252547.log: => Passed
+log/rw_value_register_test_591931.log: => Passed
+log/rw_value_register_test_979878.log: => Passed
+log/rw_value_register_test_987722.log: => Passed
+-----------------------------------------------------------

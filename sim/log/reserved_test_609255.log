@@ -1,0 +1,1239 @@
+# vsim -sv_seed 609255 -debugDB -l reserved_test_609255.log -voptargs="+acc" -assertdebug -c testbench -do " log -r /*;run -all;" "+reserved_test" 
+# Start time: 23:39:25 on Jul 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.6d_1 linux_x86_64 Apr 11 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dut_if(fast)
+# Loading work.timer_pkg(fast)
+# Loading work.test_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.dut_if(fast)
+# Loading work.timer_top(fast)
+# Loading work.timer_register(fast)
+# Loading work.timer_clock_divisor(fast)
+# Loading work.timer_counter(fast)
+# Loading work.timer_interrupt(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+#  log -r /*
+# run -all
+# [TestBench] reserved
+# 0: [Environment] Build
+# 110000: [Stimulus] Get packet
+# 110000: [Stimulus] Send packet to Driver
+# 110000: [Driver] Get packet from Stimulus
+# 110000: [Driver] Start APB transfer
+# 130000: [Monitor] Start capturing APB transaction
+# 150000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h1b, data = 8'h24
+# 170000: [Stimulus] Get packet
+# 170000: [Stimulus] Send packet to Driver
+# 170000: [Driver] Get packet from Stimulus
+# 170000: [Driver] Start APB transfer
+# 190000: [Monitor] Start capturing APB transaction
+# 210000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h1b, data = 8'h00
+# 250000: [Stimulus] Get packet
+# 250000: [Stimulus] Send packet to Driver
+# 250000: [Driver] Get packet from Stimulus
+# 250000: [Driver] Start APB transfer
+# 270000: [Monitor] Start capturing APB transaction
+# 290000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hb2, data = 8'h81
+# 310000: [Stimulus] Get packet
+# 310000: [Stimulus] Send packet to Driver
+# 310000: [Driver] Get packet from Stimulus
+# 310000: [Driver] Start APB transfer
+# 330000: [Monitor] Start capturing APB transaction
+# 350000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hb2, data = 8'h00
+# 390000: [Stimulus] Get packet
+# 390000: [Stimulus] Send packet to Driver
+# 390000: [Driver] Get packet from Stimulus
+# 390000: [Driver] Start APB transfer
+# 410000: [Monitor] Start capturing APB transaction
+# 430000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h5b, data = 8'h09
+# 450000: [Stimulus] Get packet
+# 450000: [Stimulus] Send packet to Driver
+# 450000: [Driver] Get packet from Stimulus
+# 450000: [Driver] Start APB transfer
+# 470000: [Monitor] Start capturing APB transaction
+# 490000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h5b, data = 8'h00
+# 530000: [Stimulus] Get packet
+# 530000: [Stimulus] Send packet to Driver
+# 530000: [Driver] Get packet from Stimulus
+# 530000: [Driver] Start APB transfer
+# 550000: [Monitor] Start capturing APB transaction
+# 570000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h19, data = 8'h63
+# 590000: [Stimulus] Get packet
+# 590000: [Stimulus] Send packet to Driver
+# 590000: [Driver] Get packet from Stimulus
+# 590000: [Driver] Start APB transfer
+# 610000: [Monitor] Start capturing APB transaction
+# 630000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h19, data = 8'h00
+# 670000: [Stimulus] Get packet
+# 670000: [Stimulus] Send packet to Driver
+# 670000: [Driver] Get packet from Stimulus
+# 670000: [Driver] Start APB transfer
+# 690000: [Monitor] Start capturing APB transaction
+# 710000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h9c, data = 8'h0d
+# 730000: [Stimulus] Get packet
+# 730000: [Stimulus] Send packet to Driver
+# 730000: [Driver] Get packet from Stimulus
+# 730000: [Driver] Start APB transfer
+# 750000: [Monitor] Start capturing APB transaction
+# 770000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h9c, data = 8'h00
+# 810000: [Stimulus] Get packet
+# 810000: [Stimulus] Send packet to Driver
+# 810000: [Driver] Get packet from Stimulus
+# 810000: [Driver] Start APB transfer
+# 830000: [Monitor] Start capturing APB transaction
+# 850000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h6f, data = 8'h8d
+# 870000: [Stimulus] Get packet
+# 870000: [Stimulus] Send packet to Driver
+# 870000: [Driver] Get packet from Stimulus
+# 870000: [Driver] Start APB transfer
+# 890000: [Monitor] Start capturing APB transaction
+# 910000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h6f, data = 8'h00
+# 950000: [Stimulus] Get packet
+# 950000: [Stimulus] Send packet to Driver
+# 950000: [Driver] Get packet from Stimulus
+# 950000: [Driver] Start APB transfer
+# 970000: [Monitor] Start capturing APB transaction
+# 990000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h94, data = 8'h65
+# 1010000: [Stimulus] Get packet
+# 1010000: [Stimulus] Send packet to Driver
+# 1010000: [Driver] Get packet from Stimulus
+# 1010000: [Driver] Start APB transfer
+# 1030000: [Monitor] Start capturing APB transaction
+# 1050000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h94, data = 8'h00
+# 1090000: [Stimulus] Get packet
+# 1090000: [Stimulus] Send packet to Driver
+# 1090000: [Driver] Get packet from Stimulus
+# 1090000: [Driver] Start APB transfer
+# 1110000: [Monitor] Start capturing APB transaction
+# 1130000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h84, data = 8'h12
+# 1150000: [Stimulus] Get packet
+# 1150000: [Stimulus] Send packet to Driver
+# 1150000: [Driver] Get packet from Stimulus
+# 1150000: [Driver] Start APB transfer
+# 1170000: [Monitor] Start capturing APB transaction
+# 1190000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h84, data = 8'h00
+# 1230000: [Stimulus] Get packet
+# 1230000: [Stimulus] Send packet to Driver
+# 1230000: [Driver] Get packet from Stimulus
+# 1230000: [Driver] Start APB transfer
+# 1250000: [Monitor] Start capturing APB transaction
+# 1270000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hf7, data = 8'h01
+# 1290000: [Stimulus] Get packet
+# 1290000: [Stimulus] Send packet to Driver
+# 1290000: [Driver] Get packet from Stimulus
+# 1290000: [Driver] Start APB transfer
+# 1310000: [Monitor] Start capturing APB transaction
+# 1330000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hf7, data = 8'h00
+# 1370000: [Stimulus] Get packet
+# 1370000: [Stimulus] Send packet to Driver
+# 1370000: [Driver] Get packet from Stimulus
+# 1370000: [Driver] Start APB transfer
+# 1390000: [Monitor] Start capturing APB transaction
+# 1410000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h4b, data = 8'h0d
+# 1430000: [Stimulus] Get packet
+# 1430000: [Stimulus] Send packet to Driver
+# 1430000: [Driver] Get packet from Stimulus
+# 1430000: [Driver] Start APB transfer
+# 1450000: [Monitor] Start capturing APB transaction
+# 1470000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h4b, data = 8'h00
+# 1510000: [Stimulus] Get packet
+# 1510000: [Stimulus] Send packet to Driver
+# 1510000: [Driver] Get packet from Stimulus
+# 1510000: [Driver] Start APB transfer
+# 1530000: [Monitor] Start capturing APB transaction
+# 1550000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h23, data = 8'h76
+# 1570000: [Stimulus] Get packet
+# 1570000: [Stimulus] Send packet to Driver
+# 1570000: [Driver] Get packet from Stimulus
+# 1570000: [Driver] Start APB transfer
+# 1590000: [Monitor] Start capturing APB transaction
+# 1610000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h23, data = 8'h00
+# 1650000: [Stimulus] Get packet
+# 1650000: [Stimulus] Send packet to Driver
+# 1650000: [Driver] Get packet from Stimulus
+# 1650000: [Driver] Start APB transfer
+# 1670000: [Monitor] Start capturing APB transaction
+# 1690000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h36, data = 8'h3d
+# 1710000: [Stimulus] Get packet
+# 1710000: [Stimulus] Send packet to Driver
+# 1710000: [Driver] Get packet from Stimulus
+# 1710000: [Driver] Start APB transfer
+# 1730000: [Monitor] Start capturing APB transaction
+# 1750000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h36, data = 8'h00
+# 1790000: [Stimulus] Get packet
+# 1790000: [Stimulus] Send packet to Driver
+# 1790000: [Driver] Get packet from Stimulus
+# 1790000: [Driver] Start APB transfer
+# 1810000: [Monitor] Start capturing APB transaction
+# 1830000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hd0, data = 8'hed
+# 1850000: [Stimulus] Get packet
+# 1850000: [Stimulus] Send packet to Driver
+# 1850000: [Driver] Get packet from Stimulus
+# 1850000: [Driver] Start APB transfer
+# 1870000: [Monitor] Start capturing APB transaction
+# 1890000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hd0, data = 8'h00
+# 1930000: [Stimulus] Get packet
+# 1930000: [Stimulus] Send packet to Driver
+# 1930000: [Driver] Get packet from Stimulus
+# 1930000: [Driver] Start APB transfer
+# 1950000: [Monitor] Start capturing APB transaction
+# 1970000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h3e, data = 8'h8c
+# 1990000: [Stimulus] Get packet
+# 1990000: [Stimulus] Send packet to Driver
+# 1990000: [Driver] Get packet from Stimulus
+# 1990000: [Driver] Start APB transfer
+# 2010000: [Monitor] Start capturing APB transaction
+# 2030000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h3e, data = 8'h00
+# 2070000: [Stimulus] Get packet
+# 2070000: [Stimulus] Send packet to Driver
+# 2070000: [Driver] Get packet from Stimulus
+# 2070000: [Driver] Start APB transfer
+# 2090000: [Monitor] Start capturing APB transaction
+# 2110000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h76, data = 8'hf9
+# 2130000: [Stimulus] Get packet
+# 2130000: [Stimulus] Send packet to Driver
+# 2130000: [Driver] Get packet from Stimulus
+# 2130000: [Driver] Start APB transfer
+# 2150000: [Monitor] Start capturing APB transaction
+# 2170000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h76, data = 8'h00
+# 2210000: [Stimulus] Get packet
+# 2210000: [Stimulus] Send packet to Driver
+# 2210000: [Driver] Get packet from Stimulus
+# 2210000: [Driver] Start APB transfer
+# 2230000: [Monitor] Start capturing APB transaction
+# 2250000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h4c, data = 8'hc6
+# 2270000: [Stimulus] Get packet
+# 2270000: [Stimulus] Send packet to Driver
+# 2270000: [Driver] Get packet from Stimulus
+# 2270000: [Driver] Start APB transfer
+# 2290000: [Monitor] Start capturing APB transaction
+# 2310000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h4c, data = 8'h00
+# 2350000: [Stimulus] Get packet
+# 2350000: [Stimulus] Send packet to Driver
+# 2350000: [Driver] Get packet from Stimulus
+# 2350000: [Driver] Start APB transfer
+# 2370000: [Monitor] Start capturing APB transaction
+# 2390000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hd4, data = 8'hc5
+# 2410000: [Stimulus] Get packet
+# 2410000: [Stimulus] Send packet to Driver
+# 2410000: [Driver] Get packet from Stimulus
+# 2410000: [Driver] Start APB transfer
+# 2430000: [Monitor] Start capturing APB transaction
+# 2450000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hd4, data = 8'h00
+# 2490000: [Stimulus] Get packet
+# 2490000: [Stimulus] Send packet to Driver
+# 2490000: [Driver] Get packet from Stimulus
+# 2490000: [Driver] Start APB transfer
+# 2510000: [Monitor] Start capturing APB transaction
+# 2530000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h7d, data = 8'haa
+# 2550000: [Stimulus] Get packet
+# 2550000: [Stimulus] Send packet to Driver
+# 2550000: [Driver] Get packet from Stimulus
+# 2550000: [Driver] Start APB transfer
+# 2570000: [Monitor] Start capturing APB transaction
+# 2590000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h7d, data = 8'h00
+# 2630000: [Stimulus] Get packet
+# 2630000: [Stimulus] Send packet to Driver
+# 2630000: [Driver] Get packet from Stimulus
+# 2630000: [Driver] Start APB transfer
+# 2650000: [Monitor] Start capturing APB transaction
+# 2670000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hdb, data = 8'he5
+# 2690000: [Stimulus] Get packet
+# 2690000: [Stimulus] Send packet to Driver
+# 2690000: [Driver] Get packet from Stimulus
+# 2690000: [Driver] Start APB transfer
+# 2710000: [Monitor] Start capturing APB transaction
+# 2730000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hdb, data = 8'h00
+# 2770000: [Stimulus] Get packet
+# 2770000: [Stimulus] Send packet to Driver
+# 2770000: [Driver] Get packet from Stimulus
+# 2770000: [Driver] Start APB transfer
+# 2790000: [Monitor] Start capturing APB transaction
+# 2810000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'ha4, data = 8'h77
+# 2830000: [Stimulus] Get packet
+# 2830000: [Stimulus] Send packet to Driver
+# 2830000: [Driver] Get packet from Stimulus
+# 2830000: [Driver] Start APB transfer
+# 2850000: [Monitor] Start capturing APB transaction
+# 2870000: [Scoreboard] Get packet from Monitor: READ, addr = 8'ha4, data = 8'h00
+# 2910000: [Stimulus] Get packet
+# 2910000: [Stimulus] Send packet to Driver
+# 2910000: [Driver] Get packet from Stimulus
+# 2910000: [Driver] Start APB transfer
+# 2930000: [Monitor] Start capturing APB transaction
+# 2950000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hdf, data = 8'h12
+# 2970000: [Stimulus] Get packet
+# 2970000: [Stimulus] Send packet to Driver
+# 2970000: [Driver] Get packet from Stimulus
+# 2970000: [Driver] Start APB transfer
+# 2990000: [Monitor] Start capturing APB transaction
+# 3010000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hdf, data = 8'h00
+# 3050000: [Stimulus] Get packet
+# 3050000: [Stimulus] Send packet to Driver
+# 3050000: [Driver] Get packet from Stimulus
+# 3050000: [Driver] Start APB transfer
+# 3070000: [Monitor] Start capturing APB transaction
+# 3090000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hb8, data = 8'h8f
+# 3110000: [Stimulus] Get packet
+# 3110000: [Stimulus] Send packet to Driver
+# 3110000: [Driver] Get packet from Stimulus
+# 3110000: [Driver] Start APB transfer
+# 3130000: [Monitor] Start capturing APB transaction
+# 3150000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hb8, data = 8'h00
+# 3190000: [Stimulus] Get packet
+# 3190000: [Stimulus] Send packet to Driver
+# 3190000: [Driver] Get packet from Stimulus
+# 3190000: [Driver] Start APB transfer
+# 3210000: [Monitor] Start capturing APB transaction
+# 3230000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hf0, data = 8'hf2
+# 3250000: [Stimulus] Get packet
+# 3250000: [Stimulus] Send packet to Driver
+# 3250000: [Driver] Get packet from Stimulus
+# 3250000: [Driver] Start APB transfer
+# 3270000: [Monitor] Start capturing APB transaction
+# 3290000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hf0, data = 8'h00
+# 3330000: [Stimulus] Get packet
+# 3330000: [Stimulus] Send packet to Driver
+# 3330000: [Driver] Get packet from Stimulus
+# 3330000: [Driver] Start APB transfer
+# 3350000: [Monitor] Start capturing APB transaction
+# 3370000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hae, data = 8'hce
+# 3390000: [Stimulus] Get packet
+# 3390000: [Stimulus] Send packet to Driver
+# 3390000: [Driver] Get packet from Stimulus
+# 3390000: [Driver] Start APB transfer
+# 3410000: [Monitor] Start capturing APB transaction
+# 3430000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hae, data = 8'h00
+# 3470000: [Stimulus] Get packet
+# 3470000: [Stimulus] Send packet to Driver
+# 3470000: [Driver] Get packet from Stimulus
+# 3470000: [Driver] Start APB transfer
+# 3490000: [Monitor] Start capturing APB transaction
+# 3510000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h0e, data = 8'he8
+# 3530000: [Stimulus] Get packet
+# 3530000: [Stimulus] Send packet to Driver
+# 3530000: [Driver] Get packet from Stimulus
+# 3530000: [Driver] Start APB transfer
+# 3550000: [Monitor] Start capturing APB transaction
+# 3570000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h0e, data = 8'h00
+# 3610000: [Stimulus] Get packet
+# 3610000: [Stimulus] Send packet to Driver
+# 3610000: [Driver] Get packet from Stimulus
+# 3610000: [Driver] Start APB transfer
+# 3630000: [Monitor] Start capturing APB transaction
+# 3650000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'ha3, data = 8'hc5
+# 3670000: [Stimulus] Get packet
+# 3670000: [Stimulus] Send packet to Driver
+# 3670000: [Driver] Get packet from Stimulus
+# 3670000: [Driver] Start APB transfer
+# 3690000: [Monitor] Start capturing APB transaction
+# 3710000: [Scoreboard] Get packet from Monitor: READ, addr = 8'ha3, data = 8'h00
+# 3750000: [Stimulus] Get packet
+# 3750000: [Stimulus] Send packet to Driver
+# 3750000: [Driver] Get packet from Stimulus
+# 3750000: [Driver] Start APB transfer
+# 3770000: [Monitor] Start capturing APB transaction
+# 3790000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hc2, data = 8'h5c
+# 3810000: [Stimulus] Get packet
+# 3810000: [Stimulus] Send packet to Driver
+# 3810000: [Driver] Get packet from Stimulus
+# 3810000: [Driver] Start APB transfer
+# 3830000: [Monitor] Start capturing APB transaction
+# 3850000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hc2, data = 8'h00
+# 3890000: [Stimulus] Get packet
+# 3890000: [Stimulus] Send packet to Driver
+# 3890000: [Driver] Get packet from Stimulus
+# 3890000: [Driver] Start APB transfer
+# 3910000: [Monitor] Start capturing APB transaction
+# 3930000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h82, data = 8'hbd
+# 3950000: [Stimulus] Get packet
+# 3950000: [Stimulus] Send packet to Driver
+# 3950000: [Driver] Get packet from Stimulus
+# 3950000: [Driver] Start APB transfer
+# 3970000: [Monitor] Start capturing APB transaction
+# 3990000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h82, data = 8'h00
+# 4030000: [Stimulus] Get packet
+# 4030000: [Stimulus] Send packet to Driver
+# 4030000: [Driver] Get packet from Stimulus
+# 4030000: [Driver] Start APB transfer
+# 4050000: [Monitor] Start capturing APB transaction
+# 4070000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h2f, data = 8'h2d
+# 4090000: [Stimulus] Get packet
+# 4090000: [Stimulus] Send packet to Driver
+# 4090000: [Driver] Get packet from Stimulus
+# 4090000: [Driver] Start APB transfer
+# 4110000: [Monitor] Start capturing APB transaction
+# 4130000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h2f, data = 8'h00
+# 4170000: [Stimulus] Get packet
+# 4170000: [Stimulus] Send packet to Driver
+# 4170000: [Driver] Get packet from Stimulus
+# 4170000: [Driver] Start APB transfer
+# 4190000: [Monitor] Start capturing APB transaction
+# 4210000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hf6, data = 8'h65
+# 4230000: [Stimulus] Get packet
+# 4230000: [Stimulus] Send packet to Driver
+# 4230000: [Driver] Get packet from Stimulus
+# 4230000: [Driver] Start APB transfer
+# 4250000: [Monitor] Start capturing APB transaction
+# 4270000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hf6, data = 8'h00
+# 4310000: [Stimulus] Get packet
+# 4310000: [Stimulus] Send packet to Driver
+# 4310000: [Driver] Get packet from Stimulus
+# 4310000: [Driver] Start APB transfer
+# 4330000: [Monitor] Start capturing APB transaction
+# 4350000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'haf, data = 8'h63
+# 4370000: [Stimulus] Get packet
+# 4370000: [Stimulus] Send packet to Driver
+# 4370000: [Driver] Get packet from Stimulus
+# 4370000: [Driver] Start APB transfer
+# 4390000: [Monitor] Start capturing APB transaction
+# 4410000: [Scoreboard] Get packet from Monitor: READ, addr = 8'haf, data = 8'h00
+# 4450000: [Stimulus] Get packet
+# 4450000: [Stimulus] Send packet to Driver
+# 4450000: [Driver] Get packet from Stimulus
+# 4450000: [Driver] Start APB transfer
+# 4470000: [Monitor] Start capturing APB transaction
+# 4490000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hb9, data = 8'h0a
+# 4510000: [Stimulus] Get packet
+# 4510000: [Stimulus] Send packet to Driver
+# 4510000: [Driver] Get packet from Stimulus
+# 4510000: [Driver] Start APB transfer
+# 4530000: [Monitor] Start capturing APB transaction
+# 4550000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hb9, data = 8'h00
+# 4590000: [Stimulus] Get packet
+# 4590000: [Stimulus] Send packet to Driver
+# 4590000: [Driver] Get packet from Stimulus
+# 4590000: [Driver] Start APB transfer
+# 4610000: [Monitor] Start capturing APB transaction
+# 4630000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h7a, data = 8'h80
+# 4650000: [Stimulus] Get packet
+# 4650000: [Stimulus] Send packet to Driver
+# 4650000: [Driver] Get packet from Stimulus
+# 4650000: [Driver] Start APB transfer
+# 4670000: [Monitor] Start capturing APB transaction
+# 4690000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h7a, data = 8'h00
+# 4730000: [Stimulus] Get packet
+# 4730000: [Stimulus] Send packet to Driver
+# 4730000: [Driver] Get packet from Stimulus
+# 4730000: [Driver] Start APB transfer
+# 4750000: [Monitor] Start capturing APB transaction
+# 4770000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h86, data = 8'h20
+# 4790000: [Stimulus] Get packet
+# 4790000: [Stimulus] Send packet to Driver
+# 4790000: [Driver] Get packet from Stimulus
+# 4790000: [Driver] Start APB transfer
+# 4810000: [Monitor] Start capturing APB transaction
+# 4830000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h86, data = 8'h00
+# 4870000: [Stimulus] Get packet
+# 4870000: [Stimulus] Send packet to Driver
+# 4870000: [Driver] Get packet from Stimulus
+# 4870000: [Driver] Start APB transfer
+# 4890000: [Monitor] Start capturing APB transaction
+# 4910000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h93, data = 8'haa
+# 4930000: [Stimulus] Get packet
+# 4930000: [Stimulus] Send packet to Driver
+# 4930000: [Driver] Get packet from Stimulus
+# 4930000: [Driver] Start APB transfer
+# 4950000: [Monitor] Start capturing APB transaction
+# 4970000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h93, data = 8'h00
+# 5010000: [Stimulus] Get packet
+# 5010000: [Stimulus] Send packet to Driver
+# 5010000: [Driver] Get packet from Stimulus
+# 5010000: [Driver] Start APB transfer
+# 5030000: [Monitor] Start capturing APB transaction
+# 5050000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h70, data = 8'h9d
+# 5070000: [Stimulus] Get packet
+# 5070000: [Stimulus] Send packet to Driver
+# 5070000: [Driver] Get packet from Stimulus
+# 5070000: [Driver] Start APB transfer
+# 5090000: [Monitor] Start capturing APB transaction
+# 5110000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h70, data = 8'h00
+# 5150000: [Stimulus] Get packet
+# 5150000: [Stimulus] Send packet to Driver
+# 5150000: [Driver] Get packet from Stimulus
+# 5150000: [Driver] Start APB transfer
+# 5170000: [Monitor] Start capturing APB transaction
+# 5190000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h43, data = 8'h96
+# 5210000: [Stimulus] Get packet
+# 5210000: [Stimulus] Send packet to Driver
+# 5210000: [Driver] Get packet from Stimulus
+# 5210000: [Driver] Start APB transfer
+# 5230000: [Monitor] Start capturing APB transaction
+# 5250000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h43, data = 8'h00
+# 5290000: [Stimulus] Get packet
+# 5290000: [Stimulus] Send packet to Driver
+# 5290000: [Driver] Get packet from Stimulus
+# 5290000: [Driver] Start APB transfer
+# 5310000: [Monitor] Start capturing APB transaction
+# 5330000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h67, data = 8'h13
+# 5350000: [Stimulus] Get packet
+# 5350000: [Stimulus] Send packet to Driver
+# 5350000: [Driver] Get packet from Stimulus
+# 5350000: [Driver] Start APB transfer
+# 5370000: [Monitor] Start capturing APB transaction
+# 5390000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h67, data = 8'h00
+# 5430000: [Stimulus] Get packet
+# 5430000: [Stimulus] Send packet to Driver
+# 5430000: [Driver] Get packet from Stimulus
+# 5430000: [Driver] Start APB transfer
+# 5450000: [Monitor] Start capturing APB transaction
+# 5470000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h1a, data = 8'h0d
+# 5490000: [Stimulus] Get packet
+# 5490000: [Stimulus] Send packet to Driver
+# 5490000: [Driver] Get packet from Stimulus
+# 5490000: [Driver] Start APB transfer
+# 5510000: [Monitor] Start capturing APB transaction
+# 5530000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h1a, data = 8'h00
+# 5570000: [Stimulus] Get packet
+# 5570000: [Stimulus] Send packet to Driver
+# 5570000: [Driver] Get packet from Stimulus
+# 5570000: [Driver] Start APB transfer
+# 5590000: [Monitor] Start capturing APB transaction
+# 5610000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h21, data = 8'h53
+# 5630000: [Stimulus] Get packet
+# 5630000: [Stimulus] Send packet to Driver
+# 5630000: [Driver] Get packet from Stimulus
+# 5630000: [Driver] Start APB transfer
+# 5650000: [Monitor] Start capturing APB transaction
+# 5670000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h21, data = 8'h00
+# 5710000: [Stimulus] Get packet
+# 5710000: [Stimulus] Send packet to Driver
+# 5710000: [Driver] Get packet from Stimulus
+# 5710000: [Driver] Start APB transfer
+# 5730000: [Monitor] Start capturing APB transaction
+# 5750000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h3d, data = 8'h6b
+# 5770000: [Stimulus] Get packet
+# 5770000: [Stimulus] Send packet to Driver
+# 5770000: [Driver] Get packet from Stimulus
+# 5770000: [Driver] Start APB transfer
+# 5790000: [Monitor] Start capturing APB transaction
+# 5810000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h3d, data = 8'h00
+# 5850000: [Stimulus] Get packet
+# 5850000: [Stimulus] Send packet to Driver
+# 5850000: [Driver] Get packet from Stimulus
+# 5850000: [Driver] Start APB transfer
+# 5870000: [Monitor] Start capturing APB transaction
+# 5890000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h35, data = 8'hd5
+# 5910000: [Stimulus] Get packet
+# 5910000: [Stimulus] Send packet to Driver
+# 5910000: [Driver] Get packet from Stimulus
+# 5910000: [Driver] Start APB transfer
+# 5930000: [Monitor] Start capturing APB transaction
+# 5950000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h35, data = 8'h00
+# 5990000: [Stimulus] Get packet
+# 5990000: [Stimulus] Send packet to Driver
+# 5990000: [Driver] Get packet from Stimulus
+# 5990000: [Driver] Start APB transfer
+# 6010000: [Monitor] Start capturing APB transaction
+# 6030000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hca, data = 8'h02
+# 6050000: [Stimulus] Get packet
+# 6050000: [Stimulus] Send packet to Driver
+# 6050000: [Driver] Get packet from Stimulus
+# 6050000: [Driver] Start APB transfer
+# 6070000: [Monitor] Start capturing APB transaction
+# 6090000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hca, data = 8'h00
+# 6130000: [Stimulus] Get packet
+# 6130000: [Stimulus] Send packet to Driver
+# 6130000: [Driver] Get packet from Stimulus
+# 6130000: [Driver] Start APB transfer
+# 6150000: [Monitor] Start capturing APB transaction
+# 6170000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h7b, data = 8'hae
+# 6190000: [Stimulus] Get packet
+# 6190000: [Stimulus] Send packet to Driver
+# 6190000: [Driver] Get packet from Stimulus
+# 6190000: [Driver] Start APB transfer
+# 6210000: [Monitor] Start capturing APB transaction
+# 6230000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h7b, data = 8'h00
+# 6270000: [Stimulus] Get packet
+# 6270000: [Stimulus] Send packet to Driver
+# 6270000: [Driver] Get packet from Stimulus
+# 6270000: [Driver] Start APB transfer
+# 6290000: [Monitor] Start capturing APB transaction
+# 6310000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h1b, data = 8'h1d
+# 6330000: [Stimulus] Get packet
+# 6330000: [Stimulus] Send packet to Driver
+# 6330000: [Driver] Get packet from Stimulus
+# 6330000: [Driver] Start APB transfer
+# 6350000: [Monitor] Start capturing APB transaction
+# 6370000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h1b, data = 8'h00
+# 6410000: [Stimulus] Get packet
+# 6410000: [Stimulus] Send packet to Driver
+# 6410000: [Driver] Get packet from Stimulus
+# 6410000: [Driver] Start APB transfer
+# 6430000: [Monitor] Start capturing APB transaction
+# 6450000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hd4, data = 8'hcf
+# 6470000: [Stimulus] Get packet
+# 6470000: [Stimulus] Send packet to Driver
+# 6470000: [Driver] Get packet from Stimulus
+# 6470000: [Driver] Start APB transfer
+# 6490000: [Monitor] Start capturing APB transaction
+# 6510000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hd4, data = 8'h00
+# 6550000: [Stimulus] Get packet
+# 6550000: [Stimulus] Send packet to Driver
+# 6550000: [Driver] Get packet from Stimulus
+# 6550000: [Driver] Start APB transfer
+# 6570000: [Monitor] Start capturing APB transaction
+# 6590000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h31, data = 8'h23
+# 6610000: [Stimulus] Get packet
+# 6610000: [Stimulus] Send packet to Driver
+# 6610000: [Driver] Get packet from Stimulus
+# 6610000: [Driver] Start APB transfer
+# 6630000: [Monitor] Start capturing APB transaction
+# 6650000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h31, data = 8'h00
+# 6690000: [Stimulus] Get packet
+# 6690000: [Stimulus] Send packet to Driver
+# 6690000: [Driver] Get packet from Stimulus
+# 6690000: [Driver] Start APB transfer
+# 6710000: [Monitor] Start capturing APB transaction
+# 6730000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h32, data = 8'h0a
+# 6750000: [Stimulus] Get packet
+# 6750000: [Stimulus] Send packet to Driver
+# 6750000: [Driver] Get packet from Stimulus
+# 6750000: [Driver] Start APB transfer
+# 6770000: [Monitor] Start capturing APB transaction
+# 6790000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h32, data = 8'h00
+# 6830000: [Stimulus] Get packet
+# 6830000: [Stimulus] Send packet to Driver
+# 6830000: [Driver] Get packet from Stimulus
+# 6830000: [Driver] Start APB transfer
+# 6850000: [Monitor] Start capturing APB transaction
+# 6870000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h34, data = 8'hca
+# 6890000: [Stimulus] Get packet
+# 6890000: [Stimulus] Send packet to Driver
+# 6890000: [Driver] Get packet from Stimulus
+# 6890000: [Driver] Start APB transfer
+# 6910000: [Monitor] Start capturing APB transaction
+# 6930000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h34, data = 8'h00
+# 6970000: [Stimulus] Get packet
+# 6970000: [Stimulus] Send packet to Driver
+# 6970000: [Driver] Get packet from Stimulus
+# 6970000: [Driver] Start APB transfer
+# 6990000: [Monitor] Start capturing APB transaction
+# 7010000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hcc, data = 8'h3c
+# 7030000: [Stimulus] Get packet
+# 7030000: [Stimulus] Send packet to Driver
+# 7030000: [Driver] Get packet from Stimulus
+# 7030000: [Driver] Start APB transfer
+# 7050000: [Monitor] Start capturing APB transaction
+# 7070000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hcc, data = 8'h00
+# 7110000: [Stimulus] Get packet
+# 7110000: [Stimulus] Send packet to Driver
+# 7110000: [Driver] Get packet from Stimulus
+# 7110000: [Driver] Start APB transfer
+# 7130000: [Monitor] Start capturing APB transaction
+# 7150000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h7e, data = 8'hf2
+# 7170000: [Stimulus] Get packet
+# 7170000: [Stimulus] Send packet to Driver
+# 7170000: [Driver] Get packet from Stimulus
+# 7170000: [Driver] Start APB transfer
+# 7190000: [Monitor] Start capturing APB transaction
+# 7210000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h7e, data = 8'h00
+# 7250000: [Stimulus] Get packet
+# 7250000: [Stimulus] Send packet to Driver
+# 7250000: [Driver] Get packet from Stimulus
+# 7250000: [Driver] Start APB transfer
+# 7270000: [Monitor] Start capturing APB transaction
+# 7290000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hff, data = 8'h8a
+# 7310000: [Stimulus] Get packet
+# 7310000: [Stimulus] Send packet to Driver
+# 7310000: [Driver] Get packet from Stimulus
+# 7310000: [Driver] Start APB transfer
+# 7330000: [Monitor] Start capturing APB transaction
+# 7350000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hff, data = 8'h00
+# 7390000: [Stimulus] Get packet
+# 7390000: [Stimulus] Send packet to Driver
+# 7390000: [Driver] Get packet from Stimulus
+# 7390000: [Driver] Start APB transfer
+# 7410000: [Monitor] Start capturing APB transaction
+# 7430000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hcc, data = 8'h41
+# 7450000: [Stimulus] Get packet
+# 7450000: [Stimulus] Send packet to Driver
+# 7450000: [Driver] Get packet from Stimulus
+# 7450000: [Driver] Start APB transfer
+# 7470000: [Monitor] Start capturing APB transaction
+# 7490000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hcc, data = 8'h00
+# 7530000: [Stimulus] Get packet
+# 7530000: [Stimulus] Send packet to Driver
+# 7530000: [Driver] Get packet from Stimulus
+# 7530000: [Driver] Start APB transfer
+# 7550000: [Monitor] Start capturing APB transaction
+# 7570000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hba, data = 8'hd8
+# 7590000: [Stimulus] Get packet
+# 7590000: [Stimulus] Send packet to Driver
+# 7590000: [Driver] Get packet from Stimulus
+# 7590000: [Driver] Start APB transfer
+# 7610000: [Monitor] Start capturing APB transaction
+# 7630000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hba, data = 8'h00
+# 7670000: [Stimulus] Get packet
+# 7670000: [Stimulus] Send packet to Driver
+# 7670000: [Driver] Get packet from Stimulus
+# 7670000: [Driver] Start APB transfer
+# 7690000: [Monitor] Start capturing APB transaction
+# 7710000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h5d, data = 8'h78
+# 7730000: [Stimulus] Get packet
+# 7730000: [Stimulus] Send packet to Driver
+# 7730000: [Driver] Get packet from Stimulus
+# 7730000: [Driver] Start APB transfer
+# 7750000: [Monitor] Start capturing APB transaction
+# 7770000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h5d, data = 8'h00
+# 7810000: [Stimulus] Get packet
+# 7810000: [Stimulus] Send packet to Driver
+# 7810000: [Driver] Get packet from Stimulus
+# 7810000: [Driver] Start APB transfer
+# 7830000: [Monitor] Start capturing APB transaction
+# 7850000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h17, data = 8'h89
+# 7870000: [Stimulus] Get packet
+# 7870000: [Stimulus] Send packet to Driver
+# 7870000: [Driver] Get packet from Stimulus
+# 7870000: [Driver] Start APB transfer
+# 7890000: [Monitor] Start capturing APB transaction
+# 7910000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h17, data = 8'h00
+# 7950000: [Stimulus] Get packet
+# 7950000: [Stimulus] Send packet to Driver
+# 7950000: [Driver] Get packet from Stimulus
+# 7950000: [Driver] Start APB transfer
+# 7970000: [Monitor] Start capturing APB transaction
+# 7990000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hde, data = 8'heb
+# 8010000: [Stimulus] Get packet
+# 8010000: [Stimulus] Send packet to Driver
+# 8010000: [Driver] Get packet from Stimulus
+# 8010000: [Driver] Start APB transfer
+# 8030000: [Monitor] Start capturing APB transaction
+# 8050000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hde, data = 8'h00
+# 8090000: [Stimulus] Get packet
+# 8090000: [Stimulus] Send packet to Driver
+# 8090000: [Driver] Get packet from Stimulus
+# 8090000: [Driver] Start APB transfer
+# 8110000: [Monitor] Start capturing APB transaction
+# 8130000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hd9, data = 8'hb6
+# 8150000: [Stimulus] Get packet
+# 8150000: [Stimulus] Send packet to Driver
+# 8150000: [Driver] Get packet from Stimulus
+# 8150000: [Driver] Start APB transfer
+# 8170000: [Monitor] Start capturing APB transaction
+# 8190000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hd9, data = 8'h00
+# 8230000: [Stimulus] Get packet
+# 8230000: [Stimulus] Send packet to Driver
+# 8230000: [Driver] Get packet from Stimulus
+# 8230000: [Driver] Start APB transfer
+# 8250000: [Monitor] Start capturing APB transaction
+# 8270000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hd5, data = 8'hc6
+# 8290000: [Stimulus] Get packet
+# 8290000: [Stimulus] Send packet to Driver
+# 8290000: [Driver] Get packet from Stimulus
+# 8290000: [Driver] Start APB transfer
+# 8310000: [Monitor] Start capturing APB transaction
+# 8330000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hd5, data = 8'h00
+# 8370000: [Stimulus] Get packet
+# 8370000: [Stimulus] Send packet to Driver
+# 8370000: [Driver] Get packet from Stimulus
+# 8370000: [Driver] Start APB transfer
+# 8390000: [Monitor] Start capturing APB transaction
+# 8410000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'ha0, data = 8'hae
+# 8430000: [Stimulus] Get packet
+# 8430000: [Stimulus] Send packet to Driver
+# 8430000: [Driver] Get packet from Stimulus
+# 8430000: [Driver] Start APB transfer
+# 8450000: [Monitor] Start capturing APB transaction
+# 8470000: [Scoreboard] Get packet from Monitor: READ, addr = 8'ha0, data = 8'h00
+# 8510000: [Stimulus] Get packet
+# 8510000: [Stimulus] Send packet to Driver
+# 8510000: [Driver] Get packet from Stimulus
+# 8510000: [Driver] Start APB transfer
+# 8530000: [Monitor] Start capturing APB transaction
+# 8550000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h25, data = 8'hbc
+# 8570000: [Stimulus] Get packet
+# 8570000: [Stimulus] Send packet to Driver
+# 8570000: [Driver] Get packet from Stimulus
+# 8570000: [Driver] Start APB transfer
+# 8590000: [Monitor] Start capturing APB transaction
+# 8610000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h25, data = 8'h00
+# 8650000: [Stimulus] Get packet
+# 8650000: [Stimulus] Send packet to Driver
+# 8650000: [Driver] Get packet from Stimulus
+# 8650000: [Driver] Start APB transfer
+# 8670000: [Monitor] Start capturing APB transaction
+# 8690000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hce, data = 8'h2a
+# 8710000: [Stimulus] Get packet
+# 8710000: [Stimulus] Send packet to Driver
+# 8710000: [Driver] Get packet from Stimulus
+# 8710000: [Driver] Start APB transfer
+# 8730000: [Monitor] Start capturing APB transaction
+# 8750000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hce, data = 8'h00
+# 8790000: [Stimulus] Get packet
+# 8790000: [Stimulus] Send packet to Driver
+# 8790000: [Driver] Get packet from Stimulus
+# 8790000: [Driver] Start APB transfer
+# 8810000: [Monitor] Start capturing APB transaction
+# 8830000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h9a, data = 8'h0b
+# 8850000: [Stimulus] Get packet
+# 8850000: [Stimulus] Send packet to Driver
+# 8850000: [Driver] Get packet from Stimulus
+# 8850000: [Driver] Start APB transfer
+# 8870000: [Monitor] Start capturing APB transaction
+# 8890000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h9a, data = 8'h00
+# 8930000: [Stimulus] Get packet
+# 8930000: [Stimulus] Send packet to Driver
+# 8930000: [Driver] Get packet from Stimulus
+# 8930000: [Driver] Start APB transfer
+# 8950000: [Monitor] Start capturing APB transaction
+# 8970000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h54, data = 8'h71
+# 8990000: [Stimulus] Get packet
+# 8990000: [Stimulus] Send packet to Driver
+# 8990000: [Driver] Get packet from Stimulus
+# 8990000: [Driver] Start APB transfer
+# 9010000: [Monitor] Start capturing APB transaction
+# 9030000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h54, data = 8'h00
+# 9070000: [Stimulus] Get packet
+# 9070000: [Stimulus] Send packet to Driver
+# 9070000: [Driver] Get packet from Stimulus
+# 9070000: [Driver] Start APB transfer
+# 9090000: [Monitor] Start capturing APB transaction
+# 9110000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h5f, data = 8'h85
+# 9130000: [Stimulus] Get packet
+# 9130000: [Stimulus] Send packet to Driver
+# 9130000: [Driver] Get packet from Stimulus
+# 9130000: [Driver] Start APB transfer
+# 9150000: [Monitor] Start capturing APB transaction
+# 9170000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h5f, data = 8'h00
+# 9210000: [Stimulus] Get packet
+# 9210000: [Stimulus] Send packet to Driver
+# 9210000: [Driver] Get packet from Stimulus
+# 9210000: [Driver] Start APB transfer
+# 9230000: [Monitor] Start capturing APB transaction
+# 9250000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hc8, data = 8'h4f
+# 9270000: [Stimulus] Get packet
+# 9270000: [Stimulus] Send packet to Driver
+# 9270000: [Driver] Get packet from Stimulus
+# 9270000: [Driver] Start APB transfer
+# 9290000: [Monitor] Start capturing APB transaction
+# 9310000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hc8, data = 8'h00
+# 9350000: [Stimulus] Get packet
+# 9350000: [Stimulus] Send packet to Driver
+# 9350000: [Driver] Get packet from Stimulus
+# 9350000: [Driver] Start APB transfer
+# 9370000: [Monitor] Start capturing APB transaction
+# 9390000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hfb, data = 8'h3b
+# 9410000: [Stimulus] Get packet
+# 9410000: [Stimulus] Send packet to Driver
+# 9410000: [Driver] Get packet from Stimulus
+# 9410000: [Driver] Start APB transfer
+# 9430000: [Monitor] Start capturing APB transaction
+# 9450000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hfb, data = 8'h00
+# 9490000: [Stimulus] Get packet
+# 9490000: [Stimulus] Send packet to Driver
+# 9490000: [Driver] Get packet from Stimulus
+# 9490000: [Driver] Start APB transfer
+# 9510000: [Monitor] Start capturing APB transaction
+# 9530000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h62, data = 8'h3a
+# 9550000: [Stimulus] Get packet
+# 9550000: [Stimulus] Send packet to Driver
+# 9550000: [Driver] Get packet from Stimulus
+# 9550000: [Driver] Start APB transfer
+# 9570000: [Monitor] Start capturing APB transaction
+# 9590000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h62, data = 8'h00
+# 9630000: [Stimulus] Get packet
+# 9630000: [Stimulus] Send packet to Driver
+# 9630000: [Driver] Get packet from Stimulus
+# 9630000: [Driver] Start APB transfer
+# 9650000: [Monitor] Start capturing APB transaction
+# 9670000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h88, data = 8'h7e
+# 9690000: [Stimulus] Get packet
+# 9690000: [Stimulus] Send packet to Driver
+# 9690000: [Driver] Get packet from Stimulus
+# 9690000: [Driver] Start APB transfer
+# 9710000: [Monitor] Start capturing APB transaction
+# 9730000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h88, data = 8'h00
+# 9770000: [Stimulus] Get packet
+# 9770000: [Stimulus] Send packet to Driver
+# 9770000: [Driver] Get packet from Stimulus
+# 9770000: [Driver] Start APB transfer
+# 9790000: [Monitor] Start capturing APB transaction
+# 9810000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h52, data = 8'h15
+# 9830000: [Stimulus] Get packet
+# 9830000: [Stimulus] Send packet to Driver
+# 9830000: [Driver] Get packet from Stimulus
+# 9830000: [Driver] Start APB transfer
+# 9850000: [Monitor] Start capturing APB transaction
+# 9870000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h52, data = 8'h00
+# 9910000: [Stimulus] Get packet
+# 9910000: [Stimulus] Send packet to Driver
+# 9910000: [Driver] Get packet from Stimulus
+# 9910000: [Driver] Start APB transfer
+# 9930000: [Monitor] Start capturing APB transaction
+# 9950000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hae, data = 8'hf1
+# 9970000: [Stimulus] Get packet
+# 9970000: [Stimulus] Send packet to Driver
+# 9970000: [Driver] Get packet from Stimulus
+# 9970000: [Driver] Start APB transfer
+# 9990000: [Monitor] Start capturing APB transaction
+# 10010000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hae, data = 8'h00
+# 10050000: [Stimulus] Get packet
+# 10050000: [Stimulus] Send packet to Driver
+# 10050000: [Driver] Get packet from Stimulus
+# 10050000: [Driver] Start APB transfer
+# 10070000: [Monitor] Start capturing APB transaction
+# 10090000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h31, data = 8'hd9
+# 10110000: [Stimulus] Get packet
+# 10110000: [Stimulus] Send packet to Driver
+# 10110000: [Driver] Get packet from Stimulus
+# 10110000: [Driver] Start APB transfer
+# 10130000: [Monitor] Start capturing APB transaction
+# 10150000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h31, data = 8'h00
+# 10190000: [Stimulus] Get packet
+# 10190000: [Stimulus] Send packet to Driver
+# 10190000: [Driver] Get packet from Stimulus
+# 10190000: [Driver] Start APB transfer
+# 10210000: [Monitor] Start capturing APB transaction
+# 10230000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'ha9, data = 8'h62
+# 10250000: [Stimulus] Get packet
+# 10250000: [Stimulus] Send packet to Driver
+# 10250000: [Driver] Get packet from Stimulus
+# 10250000: [Driver] Start APB transfer
+# 10270000: [Monitor] Start capturing APB transaction
+# 10290000: [Scoreboard] Get packet from Monitor: READ, addr = 8'ha9, data = 8'h00
+# 10330000: [Stimulus] Get packet
+# 10330000: [Stimulus] Send packet to Driver
+# 10330000: [Driver] Get packet from Stimulus
+# 10330000: [Driver] Start APB transfer
+# 10350000: [Monitor] Start capturing APB transaction
+# 10370000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h90, data = 8'h4c
+# 10390000: [Stimulus] Get packet
+# 10390000: [Stimulus] Send packet to Driver
+# 10390000: [Driver] Get packet from Stimulus
+# 10390000: [Driver] Start APB transfer
+# 10410000: [Monitor] Start capturing APB transaction
+# 10430000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h90, data = 8'h00
+# 10470000: [Stimulus] Get packet
+# 10470000: [Stimulus] Send packet to Driver
+# 10470000: [Driver] Get packet from Stimulus
+# 10470000: [Driver] Start APB transfer
+# 10490000: [Monitor] Start capturing APB transaction
+# 10510000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hc6, data = 8'h9f
+# 10530000: [Stimulus] Get packet
+# 10530000: [Stimulus] Send packet to Driver
+# 10530000: [Driver] Get packet from Stimulus
+# 10530000: [Driver] Start APB transfer
+# 10550000: [Monitor] Start capturing APB transaction
+# 10570000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hc6, data = 8'h00
+# 10610000: [Stimulus] Get packet
+# 10610000: [Stimulus] Send packet to Driver
+# 10610000: [Driver] Get packet from Stimulus
+# 10610000: [Driver] Start APB transfer
+# 10630000: [Monitor] Start capturing APB transaction
+# 10650000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h67, data = 8'h8f
+# 10670000: [Stimulus] Get packet
+# 10670000: [Stimulus] Send packet to Driver
+# 10670000: [Driver] Get packet from Stimulus
+# 10670000: [Driver] Start APB transfer
+# 10690000: [Monitor] Start capturing APB transaction
+# 10710000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h67, data = 8'h00
+# 10750000: [Stimulus] Get packet
+# 10750000: [Stimulus] Send packet to Driver
+# 10750000: [Driver] Get packet from Stimulus
+# 10750000: [Driver] Start APB transfer
+# 10770000: [Monitor] Start capturing APB transaction
+# 10790000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h34, data = 8'hf8
+# 10810000: [Stimulus] Get packet
+# 10810000: [Stimulus] Send packet to Driver
+# 10810000: [Driver] Get packet from Stimulus
+# 10810000: [Driver] Start APB transfer
+# 10830000: [Monitor] Start capturing APB transaction
+# 10850000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h34, data = 8'h00
+# 10890000: [Stimulus] Get packet
+# 10890000: [Stimulus] Send packet to Driver
+# 10890000: [Driver] Get packet from Stimulus
+# 10890000: [Driver] Start APB transfer
+# 10910000: [Monitor] Start capturing APB transaction
+# 10930000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h25, data = 8'hb7
+# 10950000: [Stimulus] Get packet
+# 10950000: [Stimulus] Send packet to Driver
+# 10950000: [Driver] Get packet from Stimulus
+# 10950000: [Driver] Start APB transfer
+# 10970000: [Monitor] Start capturing APB transaction
+# 10990000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h25, data = 8'h00
+# 11030000: [Stimulus] Get packet
+# 11030000: [Stimulus] Send packet to Driver
+# 11030000: [Driver] Get packet from Stimulus
+# 11030000: [Driver] Start APB transfer
+# 11050000: [Monitor] Start capturing APB transaction
+# 11070000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'ha6, data = 8'h9f
+# 11090000: [Stimulus] Get packet
+# 11090000: [Stimulus] Send packet to Driver
+# 11090000: [Driver] Get packet from Stimulus
+# 11090000: [Driver] Start APB transfer
+# 11110000: [Monitor] Start capturing APB transaction
+# 11130000: [Scoreboard] Get packet from Monitor: READ, addr = 8'ha6, data = 8'h00
+# 11170000: [Stimulus] Get packet
+# 11170000: [Stimulus] Send packet to Driver
+# 11170000: [Driver] Get packet from Stimulus
+# 11170000: [Driver] Start APB transfer
+# 11190000: [Monitor] Start capturing APB transaction
+# 11210000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hbd, data = 8'h5c
+# 11230000: [Stimulus] Get packet
+# 11230000: [Stimulus] Send packet to Driver
+# 11230000: [Driver] Get packet from Stimulus
+# 11230000: [Driver] Start APB transfer
+# 11250000: [Monitor] Start capturing APB transaction
+# 11270000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hbd, data = 8'h00
+# 11310000: [Stimulus] Get packet
+# 11310000: [Stimulus] Send packet to Driver
+# 11310000: [Driver] Get packet from Stimulus
+# 11310000: [Driver] Start APB transfer
+# 11330000: [Monitor] Start capturing APB transaction
+# 11350000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hc2, data = 8'h5b
+# 11370000: [Stimulus] Get packet
+# 11370000: [Stimulus] Send packet to Driver
+# 11370000: [Driver] Get packet from Stimulus
+# 11370000: [Driver] Start APB transfer
+# 11390000: [Monitor] Start capturing APB transaction
+# 11410000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hc2, data = 8'h00
+# 11450000: [Stimulus] Get packet
+# 11450000: [Stimulus] Send packet to Driver
+# 11450000: [Driver] Get packet from Stimulus
+# 11450000: [Driver] Start APB transfer
+# 11470000: [Monitor] Start capturing APB transaction
+# 11490000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h1e, data = 8'h89
+# 11510000: [Stimulus] Get packet
+# 11510000: [Stimulus] Send packet to Driver
+# 11510000: [Driver] Get packet from Stimulus
+# 11510000: [Driver] Start APB transfer
+# 11530000: [Monitor] Start capturing APB transaction
+# 11550000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h1e, data = 8'h00
+# 11590000: [Stimulus] Get packet
+# 11590000: [Stimulus] Send packet to Driver
+# 11590000: [Driver] Get packet from Stimulus
+# 11590000: [Driver] Start APB transfer
+# 11610000: [Monitor] Start capturing APB transaction
+# 11630000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'had, data = 8'h49
+# 11650000: [Stimulus] Get packet
+# 11650000: [Stimulus] Send packet to Driver
+# 11650000: [Driver] Get packet from Stimulus
+# 11650000: [Driver] Start APB transfer
+# 11670000: [Monitor] Start capturing APB transaction
+# 11690000: [Scoreboard] Get packet from Monitor: READ, addr = 8'had, data = 8'h00
+# 11730000: [Stimulus] Get packet
+# 11730000: [Stimulus] Send packet to Driver
+# 11730000: [Driver] Get packet from Stimulus
+# 11730000: [Driver] Start APB transfer
+# 11750000: [Monitor] Start capturing APB transaction
+# 11770000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'he3, data = 8'hd0
+# 11790000: [Stimulus] Get packet
+# 11790000: [Stimulus] Send packet to Driver
+# 11790000: [Driver] Get packet from Stimulus
+# 11790000: [Driver] Start APB transfer
+# 11810000: [Monitor] Start capturing APB transaction
+# 11830000: [Scoreboard] Get packet from Monitor: READ, addr = 8'he3, data = 8'h00
+# 11870000: [Stimulus] Get packet
+# 11870000: [Stimulus] Send packet to Driver
+# 11870000: [Driver] Get packet from Stimulus
+# 11870000: [Driver] Start APB transfer
+# 11890000: [Monitor] Start capturing APB transaction
+# 11910000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hea, data = 8'hd7
+# 11930000: [Stimulus] Get packet
+# 11930000: [Stimulus] Send packet to Driver
+# 11930000: [Driver] Get packet from Stimulus
+# 11930000: [Driver] Start APB transfer
+# 11950000: [Monitor] Start capturing APB transaction
+# 11970000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hea, data = 8'h00
+# 12010000: [Stimulus] Get packet
+# 12010000: [Stimulus] Send packet to Driver
+# 12010000: [Driver] Get packet from Stimulus
+# 12010000: [Driver] Start APB transfer
+# 12030000: [Monitor] Start capturing APB transaction
+# 12050000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h0f, data = 8'h51
+# 12070000: [Stimulus] Get packet
+# 12070000: [Stimulus] Send packet to Driver
+# 12070000: [Driver] Get packet from Stimulus
+# 12070000: [Driver] Start APB transfer
+# 12090000: [Monitor] Start capturing APB transaction
+# 12110000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h0f, data = 8'h00
+# 12150000: [Stimulus] Get packet
+# 12150000: [Stimulus] Send packet to Driver
+# 12150000: [Driver] Get packet from Stimulus
+# 12150000: [Driver] Start APB transfer
+# 12170000: [Monitor] Start capturing APB transaction
+# 12190000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h63, data = 8'h96
+# 12210000: [Stimulus] Get packet
+# 12210000: [Stimulus] Send packet to Driver
+# 12210000: [Driver] Get packet from Stimulus
+# 12210000: [Driver] Start APB transfer
+# 12230000: [Monitor] Start capturing APB transaction
+# 12250000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h63, data = 8'h00
+# 12290000: [Stimulus] Get packet
+# 12290000: [Stimulus] Send packet to Driver
+# 12290000: [Driver] Get packet from Stimulus
+# 12290000: [Driver] Start APB transfer
+# 12310000: [Monitor] Start capturing APB transaction
+# 12330000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h9a, data = 8'h0c
+# 12350000: [Stimulus] Get packet
+# 12350000: [Stimulus] Send packet to Driver
+# 12350000: [Driver] Get packet from Stimulus
+# 12350000: [Driver] Start APB transfer
+# 12370000: [Monitor] Start capturing APB transaction
+# 12390000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h9a, data = 8'h00
+# 12430000: [Stimulus] Get packet
+# 12430000: [Stimulus] Send packet to Driver
+# 12430000: [Driver] Get packet from Stimulus
+# 12430000: [Driver] Start APB transfer
+# 12450000: [Monitor] Start capturing APB transaction
+# 12470000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h12, data = 8'hc2
+# 12490000: [Stimulus] Get packet
+# 12490000: [Stimulus] Send packet to Driver
+# 12490000: [Driver] Get packet from Stimulus
+# 12490000: [Driver] Start APB transfer
+# 12510000: [Monitor] Start capturing APB transaction
+# 12530000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h12, data = 8'h00
+# 12570000: [Stimulus] Get packet
+# 12570000: [Stimulus] Send packet to Driver
+# 12570000: [Driver] Get packet from Stimulus
+# 12570000: [Driver] Start APB transfer
+# 12590000: [Monitor] Start capturing APB transaction
+# 12610000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hde, data = 8'hc8
+# 12630000: [Stimulus] Get packet
+# 12630000: [Stimulus] Send packet to Driver
+# 12630000: [Driver] Get packet from Stimulus
+# 12630000: [Driver] Start APB transfer
+# 12650000: [Monitor] Start capturing APB transaction
+# 12670000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hde, data = 8'h00
+# 12710000: [Stimulus] Get packet
+# 12710000: [Stimulus] Send packet to Driver
+# 12710000: [Driver] Get packet from Stimulus
+# 12710000: [Driver] Start APB transfer
+# 12730000: [Monitor] Start capturing APB transaction
+# 12750000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h87, data = 8'h77
+# 12770000: [Stimulus] Get packet
+# 12770000: [Stimulus] Send packet to Driver
+# 12770000: [Driver] Get packet from Stimulus
+# 12770000: [Driver] Start APB transfer
+# 12790000: [Monitor] Start capturing APB transaction
+# 12810000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h87, data = 8'h00
+# 12850000: [Stimulus] Get packet
+# 12850000: [Stimulus] Send packet to Driver
+# 12850000: [Driver] Get packet from Stimulus
+# 12850000: [Driver] Start APB transfer
+# 12870000: [Monitor] Start capturing APB transaction
+# 12890000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h1c, data = 8'h3d
+# 12910000: [Stimulus] Get packet
+# 12910000: [Stimulus] Send packet to Driver
+# 12910000: [Driver] Get packet from Stimulus
+# 12910000: [Driver] Start APB transfer
+# 12930000: [Monitor] Start capturing APB transaction
+# 12950000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h1c, data = 8'h00
+# 12990000: [Stimulus] Get packet
+# 12990000: [Stimulus] Send packet to Driver
+# 12990000: [Driver] Get packet from Stimulus
+# 12990000: [Driver] Start APB transfer
+# 13010000: [Monitor] Start capturing APB transaction
+# 13030000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h41, data = 8'h12
+# 13050000: [Stimulus] Get packet
+# 13050000: [Stimulus] Send packet to Driver
+# 13050000: [Driver] Get packet from Stimulus
+# 13050000: [Driver] Start APB transfer
+# 13070000: [Monitor] Start capturing APB transaction
+# 13090000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h41, data = 8'h00
+# 13130000: [Stimulus] Get packet
+# 13130000: [Stimulus] Send packet to Driver
+# 13130000: [Driver] Get packet from Stimulus
+# 13130000: [Driver] Start APB transfer
+# 13150000: [Monitor] Start capturing APB transaction
+# 13170000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h95, data = 8'h7e
+# 13190000: [Stimulus] Get packet
+# 13190000: [Stimulus] Send packet to Driver
+# 13190000: [Driver] Get packet from Stimulus
+# 13190000: [Driver] Start APB transfer
+# 13210000: [Monitor] Start capturing APB transaction
+# 13230000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h95, data = 8'h00
+# 13270000: [Stimulus] Get packet
+# 13270000: [Stimulus] Send packet to Driver
+# 13270000: [Driver] Get packet from Stimulus
+# 13270000: [Driver] Start APB transfer
+# 13290000: [Monitor] Start capturing APB transaction
+# 13310000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'hf8, data = 8'h6d
+# 13330000: [Stimulus] Get packet
+# 13330000: [Stimulus] Send packet to Driver
+# 13330000: [Driver] Get packet from Stimulus
+# 13330000: [Driver] Start APB transfer
+# 13350000: [Monitor] Start capturing APB transaction
+# 13370000: [Scoreboard] Get packet from Monitor: READ, addr = 8'hf8, data = 8'h00
+# 13410000: [Stimulus] Get packet
+# 13410000: [Stimulus] Send packet to Driver
+# 13410000: [Driver] Get packet from Stimulus
+# 13410000: [Driver] Start APB transfer
+# 13430000: [Monitor] Start capturing APB transaction
+# 13450000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h09, data = 8'h39
+# 13470000: [Stimulus] Get packet
+# 13470000: [Stimulus] Send packet to Driver
+# 13470000: [Driver] Get packet from Stimulus
+# 13470000: [Driver] Start APB transfer
+# 13490000: [Monitor] Start capturing APB transaction
+# 13510000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h09, data = 8'h00
+# 13550000: [Stimulus] Get packet
+# 13550000: [Stimulus] Send packet to Driver
+# 13550000: [Driver] Get packet from Stimulus
+# 13550000: [Driver] Start APB transfer
+# 13570000: [Monitor] Start capturing APB transaction
+# 13590000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h44, data = 8'h1f
+# 13610000: [Stimulus] Get packet
+# 13610000: [Stimulus] Send packet to Driver
+# 13610000: [Driver] Get packet from Stimulus
+# 13610000: [Driver] Start APB transfer
+# 13630000: [Monitor] Start capturing APB transaction
+# 13650000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h44, data = 8'h00
+# 13690000: [Stimulus] Get packet
+# 13690000: [Stimulus] Send packet to Driver
+# 13690000: [Driver] Get packet from Stimulus
+# 13690000: [Driver] Start APB transfer
+# 13710000: [Monitor] Start capturing APB transaction
+# 13730000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h5c, data = 8'hd3
+# 13750000: [Stimulus] Get packet
+# 13750000: [Stimulus] Send packet to Driver
+# 13750000: [Driver] Get packet from Stimulus
+# 13750000: [Driver] Start APB transfer
+# 13770000: [Monitor] Start capturing APB transaction
+# 13790000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h5c, data = 8'h00
+# 13830000: [Stimulus] Get packet
+# 13830000: [Stimulus] Send packet to Driver
+# 13830000: [Driver] Get packet from Stimulus
+# 13830000: [Driver] Start APB transfer
+# 13850000: [Monitor] Start capturing APB transaction
+# 13870000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h40, data = 8'h85
+# 13890000: [Stimulus] Get packet
+# 13890000: [Stimulus] Send packet to Driver
+# 13890000: [Driver] Get packet from Stimulus
+# 13890000: [Driver] Start APB transfer
+# 13910000: [Monitor] Start capturing APB transaction
+# 13930000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h40, data = 8'h00
+# 13970000: [Stimulus] Get packet
+# 13970000: [Stimulus] Send packet to Driver
+# 13970000: [Driver] Get packet from Stimulus
+# 13970000: [Driver] Start APB transfer
+# 13990000: [Monitor] Start capturing APB transaction
+# 14010000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h56, data = 8'h78
+# 14030000: [Stimulus] Get packet
+# 14030000: [Stimulus] Send packet to Driver
+# 14030000: [Driver] Get packet from Stimulus
+# 14030000: [Driver] Start APB transfer
+# 14050000: [Monitor] Start capturing APB transaction
+# 14070000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h56, data = 8'h00
+# 14090000: [Scoreboard] Status: TEST PASSED
+# 15090000: [Base test] End simulation
+# ** Note: $finish    : ../testcase/base_test.sv(48)
+#    Time: 15090 ns  Iteration: 0  Instance: /testbench
+# End time: 23:39:26 on Jul 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

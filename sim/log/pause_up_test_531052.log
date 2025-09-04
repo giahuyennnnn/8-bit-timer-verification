@@ -1,0 +1,75 @@
+# vsim -sv_seed 531052 -debugDB -l pause_up_test_531052.log -voptargs="+acc" -assertdebug -c testbench -do " log -r /*;run -all;" "+pause_up_test" 
+# Start time: 23:41:35 on Jul 26,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.6d_1 linux_x86_64 Apr 11 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dut_if(fast)
+# Loading work.timer_pkg(fast)
+# Loading work.test_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.dut_if(fast)
+# Loading work.timer_top(fast)
+# Loading work.timer_register(fast)
+# Loading work.timer_clock_divisor(fast)
+# Loading work.timer_counter(fast)
+# Loading work.timer_interrupt(fast)
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+#  log -r /*
+# run -all
+# [TestBench] pause_up
+# 0: [Environment] Build
+# 0: [Stimulus] Get packet
+# 0: [Stimulus] Send packet to Driver
+# 0: [Driver] Get packet from Stimulus
+# 0: [Driver] Start APB transfer
+# 110000: [Monitor] Start capturing APB transaction
+# 130000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h03, data = 8'h01
+# 150000: [Stimulus] Get packet
+# 150000: [Stimulus] Send packet to Driver
+# 150000: [Driver] Get packet from Stimulus
+# 150000: [Driver] Start APB transfer
+# 170000: [Monitor] Start capturing APB transaction
+# 190000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h00, data = 8'h01
+# 1210000: [Stimulus] Get packet
+# 1210000: [Stimulus] Send packet to Driver
+# 1210000: [Driver] Get packet from Stimulus
+# 1210000: [Driver] Start APB transfer
+# 1230000: [Monitor] Start capturing APB transaction
+# 1250000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h00, data = 8'h00
+# 2270000: [Stimulus] Get packet
+# 2270000: [Stimulus] Send packet to Driver
+# 2270000: [Driver] Get packet from Stimulus
+# 2270000: [Driver] Start APB transfer
+# 2290000: [Monitor] Start capturing APB transaction
+# 2310000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h01, data = 8'h00
+# 2330000: [Stimulus] Get packet
+# 2330000: [Stimulus] Send packet to Driver
+# 2330000: [Driver] Get packet from Stimulus
+# 2330000: [Driver] Start APB transfer
+# 2350000: [Monitor] Start capturing APB transaction
+# 2370000: [Scoreboard] Get packet from Monitor: WRITE, addr = 8'h00, data = 8'h01
+# 2740000: [Stimulus] Get packet
+# 2740000: [Stimulus] Send packet to Driver
+# 2740000: [Driver] Get packet from Stimulus
+# 2740000: [Driver] Start APB transfer
+# 2750000: [Monitor] Start capturing APB transaction
+# 2770000: [Scoreboard] Get packet from Monitor: READ, addr = 8'h01, data = 8'h01
+# 2790000: [Scoreboard] Status: TEST PASSED
+# 3790000: [Base test] End simulation
+# ** Note: $finish    : ../testcase/base_test.sv(48)
+#    Time: 3790 ns  Iteration: 0  Instance: /testbench
+# End time: 23:41:36 on Jul 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
